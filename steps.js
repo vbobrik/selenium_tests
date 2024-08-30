@@ -1,11 +1,11 @@
 
 const {By} = require('selenium-webdriver');
 
-async function click() {
+const clickF = async function click(driver) {
     let textBox = await driver.findElement(By.name('my-text'));
     let submitButton = await driver.findElement(By.css('button'));
     await textBox.sendKeys('Selenium');
     await submitButton.click();
 }
 
-module.exports(click);
+module.exports = { clickF };
