@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "assert": "^2.1.0",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "selenium-webdriver": "^4.24.0"
+  },
+  "scripts": {
+    "mocha": "mocha",
+    "test": "npx mocha main.js"
+  }
+}
